@@ -31,8 +31,26 @@ Object however then you will have to create it as a private file, and read it in
 <a id="introducing---sharedsqlite" class="anchor" href="#introducing---sharedsqlite" aria-hidden="true"><span class="octicon octicon-link"></span></a>Introducing - Sharedsqlite!</h3>
 
 <p>Sharedsqlite is a simple thread-safe database with a single table with a key-value schema where you can save your
-(Mainly) primitive data types that suites nowhere else!
-Writing and reading the data is only a one line code</p>
+(Mainly) primitive data types that suites nowhere else excluding the headache of messing around with committing and reading 
+From the sharedPreferences.</p>
+
+<h3>
+<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h3>
+
+<p>Writing and reading the data is only a one line code.
+First create a new instance by calling - 
+<code>SharedSqlite.initialize(getApplicationContext());</code>
+And now you are free to call -
+<code>SharedSqlite.getInstance().addValue(key, value)</code>
+Wherever you want in your code in order to write the key-value pair to the database
+When key and value can be any primitive data type or an enumerator (it will turn in to String value in runtime)
+In order to read the data later on you can call any of the -
+<code>SharedSqlite.getInstance().getBooleanValue(Key, DefaultValue);</code> - To read a boolean value or the dfault value provided in case there is no mapping for the supplied key.
+<code>SharedSqlite.getInstance().getIntValue(Key, DefaultValue);</code> - To read a int value or the dfault value provided in case there is no mapping for the supplied key.
+<code>SharedSqlite.getInstance().getDoubleValue(Key, DefaultValue);</code> - To read a double value or the dfault value provided in case there is no mapping for the supplied key.
+<code>SharedSqlite.getInstance().getFloatValue(Key, DefaultValue);</code> - To read a float value or the dfault value provided in case there is no mapping for the supplied key.
+<code>SharedSqlite.getInstance().getStringValue(Key, DefaultValue);</code> - To read a String value or the dfault value provided in case there is no mapping for the supplied key.
+<code>SharedSqlite.getInstance().getLongValue(Key, DefaultValue);</code> - To read a long value or the dfault value provided in case there is no mapping for the supplied key.</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/Jhonnyc/SharedSqlite">Sharedsqlite</a> is maintained by <a href="https://github.com/Jhonnyc">Jhonnyc</a>.</span>
@@ -42,7 +60,17 @@ Writing and reading the data is only a one line code</p>
 
     </section>
 
-  
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-64565166-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
   </body>
 </html>
 
