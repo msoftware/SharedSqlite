@@ -39,18 +39,29 @@ From the sharedPreferences.</p>
 
 <p>Writing and reading the data is only a one line code.
 First create a new instance by calling - 
-<code>SharedSqlite.initialize(getApplicationContext());</code>
-And now you are free to call -
+<code>SharedSqlite.initialize(getApplicationContext());</code></p>
+
+<p>And now you are free to call -
 <code>SharedSqlite.getInstance().addValue(key, value)</code>
 Wherever you want in your code in order to write the key-value pair to the database
-When key and value can be any primitive data type or an enumerator (it will turn in to String value in runtime)
-In order to read the data later on you can call any of the -
-<code>SharedSqlite.getInstance().getBooleanValue(Key, DefaultValue);</code> - To read a boolean value or the dfault value provided in case there is no mapping for the supplied key.
-<code>SharedSqlite.getInstance().getIntValue(Key, DefaultValue);</code> - To read a int value or the dfault value provided in case there is no mapping for the supplied key.
-<code>SharedSqlite.getInstance().getDoubleValue(Key, DefaultValue);</code> - To read a double value or the dfault value provided in case there is no mapping for the supplied key.
-<code>SharedSqlite.getInstance().getFloatValue(Key, DefaultValue);</code> - To read a float value or the dfault value provided in case there is no mapping for the supplied key.
-<code>SharedSqlite.getInstance().getStringValue(Key, DefaultValue);</code> - To read a String value or the dfault value provided in case there is no mapping for the supplied key.
-<code>SharedSqlite.getInstance().getLongValue(Key, DefaultValue);</code> - To read a long value or the dfault value provided in case there is no mapping for the supplied key.</p>
+When key and value can be any primitive data type or an enumerator (it will turn in to String value in runtime)</p>
+
+<p>In order to read the data later on you can call any of the -</p>
+
+<ul>
+<li><p><code>SharedSqlite.getInstance().getBooleanValue(Key, DefaultValue);</code> - To read a boolean value or the dfault value provided in case there is no mapping for the supplied key.</p></li>
+<li><p><code>SharedSqlite.getInstance().getIntValue(Key, DefaultValue);</code> - To read a int value or the dfault value provided in case there is no mapping for the supplied key.</p></li>
+<li><p><code>SharedSqlite.getInstance().getDoubleValue(Key, DefaultValue);</code> - To read a double value or the dfault value provided in case there is no mapping for the supplied key.</p></li>
+<li><p><code>SharedSqlite.getInstance().getFloatValue(Key, DefaultValue);</code> - To read a float value or the dfault value provided in case there is no mapping for the supplied key.</p></li>
+<li><p><code>SharedSqlite.getInstance().getStringValue(Key, DefaultValue);</code> - To read a String value or the dfault value provided in case there is no mapping for the supplied key.</p></li>
+<li><p><code>SharedSqlite.getInstance().getLongValue(Key, DefaultValue);</code> - To read a long value or the dfault value provided in case there is no mapping for the supplied key.</p></li>
+</ul>
+
+<h3>
+<a id="jar-file" class="anchor" href="#jar-file" aria-hidden="true"><span class="octicon octicon-link"></span></a>Jar File</h3>
+
+<p>Jar file can be downloaded right <a href="https://github.com/Jhonnyc/SharedSqlite/blob/master/SharedSqlite/SharedSqlite.jar">here</a>
+Just add the jar to your project 'libs' folder and you're good to go.</p>
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/Jhonnyc/SharedSqlite">Sharedsqlite</a> is maintained by <a href="https://github.com/Jhonnyc">Jhonnyc</a>.</span>
